@@ -1,0 +1,137 @@
+
+/* ------------------ CONTACT --------------- */
+.carte__section {
+    margin: 20px;
+}
+.contact__title {
+    margin: 40px 20px 0;
+    font-size: 2rem;
+    border-bottom: 1px solid var(--text-dark);
+    color: var(--text-dark);
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+input, textarea {
+    border-radius: 5px;
+    transition: .3s;
+    border: 1px solid var(--cyan-process);
+    padding: 10px 14px;
+    width: 100%;
+    outline: none;
+}
+
+input:valid {
+    border: 1px solid green;
+    box-shadow: 0 0 6px green;
+}
+
+input:invalid {
+    border: 1px solid red;
+    box-shadow: 0 0 6px red;
+}
+input:not([type="submit"]){
+    margin-top: 4px;
+}
+input[type="submit"] {
+    margin-top: 30px;
+    background-color: var(--cyan-process);
+    box-shadow: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.4rem;
+    width: 100%;
+    opacity: 1;
+}
+input[type="submit"]:disabled {
+    opacity: 0.4;
+}
+
+
+input[type="submit"]:hover {
+    box-shadow: 0 0 12px var(--cyan-process);
+    cursor: pointer;
+}
+input[type="submit"]:hover:disabled {
+    box-shadow:none;
+    cursor: not-allowed;
+}
+
+textarea {
+    transition: .3s;
+    border-radius: 15px;
+    padding: 10px;
+}
+textarea:valid {
+    border: 1px solid green ;
+    box-shadow: 0 0 12px green ;
+}
+input:focus:required:valid:not(type="submit") {
+    border: 1px solid green;
+    box-shadow: 0 0 12px green;
+}
+input:not(focus):required:valid:not(type="submit"),
+textarea:not(focus):required:valid:not(type="submit") {
+    border: 1px solid green;
+    box-shadow: 0 0 12px green;
+}
+input:not(focus):required:invalid,
+textarea:not(focus):required:invalid {
+    border: 1px solid red;
+    box-shadow: 0 0 12px red;
+}
+input:placeholder-shown, textarea:placeholder-shown {
+    border: 1px solid var(--cyan-process) !important;
+    box-shadow: 0 0 12px var(--cyan-process) !important;
+}
+
+.requis-input {
+    color: var(--carmine);
+}
+.success-plane {
+    position: fixed;
+    opacity: 0;
+    font-size: 3rem;
+    z-index: -1;
+    top: 46%;
+    left: 46%;
+    transition: 0.3s;
+    color: var(--cyan-process);
+}
+.visible {
+    opacity: 1;
+    z-index: 100;
+}
+.fly {
+    transition: 0.5s;
+    top: 10%;
+    left: 90%;
+    opacity: 0;
+}
+
+/* --------------- RESPONSIVE --------------- */
+
+@media only screen and (min-width: 768px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact__title {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+}
