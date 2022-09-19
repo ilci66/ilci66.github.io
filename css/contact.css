@@ -39,9 +39,11 @@ input:invalid {
     border: 1px solid red;
     box-shadow: 0 0 6px red;
 }
+
 input:not([type="submit"]){
     margin-top: 4px;
 }
+
 input[type="submit"] {
     margin-top: 30px;
     background-color: var(--cyan-process);
@@ -52,43 +54,45 @@ input[type="submit"] {
     width: 100%;
     opacity: 1;
 }
+
 input[type="submit"]:disabled {
     opacity: 0.4;
 }
-
 
 input[type="submit"]:hover {
     box-shadow: 0 0 12px var(--cyan-process);
     cursor: pointer;
 }
+
 input[type="submit"]:hover:disabled {
     box-shadow:none;
     cursor: not-allowed;
 }
 
-textarea {
-    transition: .3s;
-    border-radius: 15px;
-    padding: 10px;
-}
+
 textarea:valid {
     border: 1px solid green ;
     box-shadow: 0 0 12px green ;
 }
+
 input:focus:required:valid:not(type="submit") {
     border: 1px solid green;
     box-shadow: 0 0 12px green;
 }
+
 input:not(focus):required:valid:not(type="submit"),
 textarea:not(focus):required:valid:not(type="submit") {
     border: 1px solid green;
     box-shadow: 0 0 12px green;
 }
+
 input:not(focus):required:invalid,
 textarea:not(focus):required:invalid {
     border: 1px solid red;
     box-shadow: 0 0 12px red;
 }
+
+/* lorsqu'il n'y a pas encore d'entrée */
 input:placeholder-shown, textarea:placeholder-shown {
     border: 1px solid var(--cyan-process) !important;
     box-shadow: 0 0 12px var(--cyan-process) !important;
@@ -97,6 +101,9 @@ input:placeholder-shown, textarea:placeholder-shown {
 .requis-input {
     color: var(--carmine);
 }
+
+/* avion qui apparaîtra sur les formulaires 
+soumis avec succès */
 .success-plane {
     position: fixed;
     opacity: 0;
@@ -107,6 +114,8 @@ input:placeholder-shown, textarea:placeholder-shown {
     transition: 0.3s;
     color: var(--cyan-process);
 }
+
+/* Pour l'animation de l'avion volant */
 .visible {
     opacity: 1;
     z-index: 100;
@@ -129,9 +138,30 @@ input:placeholder-shown, textarea:placeholder-shown {
         margin-left: 20px;
         margin-top: 10px;
     }
+    .fly {
+        top: 10%;
+        left: 80%;
+    }
+    section:nth-of-type(1) {
+        padding: 0 0 0 40px;
+    }
+    section:nth-of-type(2) {
+        padding: 0 40px 0 0;
+    }
 }
 @media only screen and (min-width: 1200px){
     main {
         grid-template-columns: 2fr 1fr;
+        grid-gap: 15px;
+    }
+    .fly {
+        top: 10%;
+        left: 70%;
+    }
+    section:nth-of-type(1) {
+        padding: 0 0 0 60px;
+    }
+    section:nth-of-type(2) {
+        padding: 0 60px 0 0;
     }
 }

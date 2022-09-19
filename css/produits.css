@@ -5,9 +5,9 @@
 }
 .filter-container > ul > li {
     padding: 4px 6px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 2px;
     transition: .3s;
     border: 2px solid white;
 }
@@ -80,7 +80,7 @@
 .modal__info-box {
     display: none;
     position: relative;
-    width: 80%;
+    width: 60vw;
     background-color: var(--text-light);
     /* display: flex; */
     flex-direction: column;
@@ -116,34 +116,46 @@
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
-.modal__info-box--info {
-    text-align: center;
+.modal__info-box--info > li {
+    list-style: circle;
+    text-transform: capitalize;
 }
 .modal__info-box--pay-btn {
-    padding: 8px 12px;
+    padding: 8px 6px;
     border: none;
     background-color: var(--cyan-process);
     margin: 20px ;
     border-radius: 15px;
     color: var(--text-light);
     transition: .3s;
+    font-size: 1.4rem;
+    box-shadow: 4px 4px 8px var(--cyan-process);
 }
 .modal__info-box--pay-btn:hover {
     cursor: pointer;
-    box-shadow: 4px 4px 8px var(--cyan-process);
+    box-shadow: 0px 0px 1px var(--cyan-process);
+
 }
 
 /* --------------- RESPONSIVE --------------- */
 
 @media only screen and (min-width: 768px){
+    .filter-container > ul > li {
+        margin-left: 8px;
+        font-size: 0.9rem;
+    }
     .cards-container {
         grid-template-columns: 1fr 1fr ;
     }
     .modal__info-box--img {
-        width: 50vw;
+        width: 30vw;
     }
-    .modal__info-box {
-        width: 60vw;
+    .filter-container > li {
+        margin-left: 14px;
+
+    }
+    section {
+        padding: 0 40px;
     }
 }
 @media only screen and (min-width: 1200px){
@@ -151,9 +163,13 @@
         grid-template-columns: repeat(4, 1fr);
     }
     .modal__info-box--img {
-        width: 40vw;
+        width: 20vw;
     }
-    .modal__info-box {
-        width: 60vw;
+    .filter-container > li {
+        margin-left: 22px;
+
+    }
+    section {
+        padding: 0 60px;
     }
 }

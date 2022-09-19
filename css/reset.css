@@ -3,7 +3,7 @@
     
     --text-light: #FFFAFB;
     --text-dark: #201e1e;
-    --text-dark-2: rgb(71, 71, 71);
+    --text-dark-2: #474747;
     --middle-blue-green: #7DE2d1;
     --persian-green: #339989;
     --cyan-process: #01BAEF;
@@ -22,77 +22,7 @@
 
 }
 
-/*-------- MAIN--GRID-RESPONSIVE --------- */
-/* main {
-    display: grid;
-    grid-template-columns: 1fr;
-} */
-
-
-/* ANIMATIONS */
-@keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; } 
-}
-
-@keyframes fade-out { 
-    100% { opacity: 0; }
-    0% { opacity: 1; }
-}
-
-@keyframes slide-out {
-    0% { 
-        top: var(--margin-top);
-    }
-    100% { 
-        top: -200px;
-    } 
-}
-
-@keyframes slide-in {
-    0% { 
-        top: -200px;
-    }
-    100% { 
-        top: var(--margin-top);
-    } 
-}
-
-@keyframes grow-in {
-    0% { 
-        display: none !important;
-        height: 0px; 
-        /* transform:  scaleY(0) !important; */
-    }
-    /* 50% { height: 50%;} */
-    100% { 
-        display: flex !important;
-        height: auto; 
-        /* transform:  scaleY(1) !important; */
-    }
-}
-@keyframes shrink-out {
-    0% {    
-        display: flex !important;
-        height: auto; 
-        /* transform:  scaleY(1) !important; */
-    }
-    /* 50% { height: 50%;} */
-    100% { 
-        display: none !important;
-        height: 0px; 
-        /* transform: scaleY(0) !important; */
-    }
-}
-
-@keyframes slide-up {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
-}
+/* ----------------- LES BASES ------------- */
 
 *, *::before, * ::after {
     padding: 0;
@@ -100,11 +30,19 @@
     box-sizing: border-box;
 }
 
+html {
+    line-height: 1.5;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+}
+
+main {
+    margin-bottom: 60px;
 }
 
 img {
@@ -124,22 +62,13 @@ li {
     list-style: none;
 }
 
-.d-flex {display: flex;}
-.flex-col {flex-direction: column;}
-.align-center {align-items: center;}
 
-.title-1 {font-size: calc(3vw + 12px);}
+/*-------------- Les "clas" communes des bases ----------- */
 
 .text-light {color: var(--text-light);}
 .text-dark {color: var(--text-dark);}
 
-.bg-1 {background-color: var(--persian-green);}
-
-.justify-center {justify-content: center;}
-.justify-around {justify-content: space-around;}
-.d-none {display: none;}
-.border-none {border: none;}
-
+/* faire disparaître des éléments */
 .hide {
     height: 0 !important; 
     opacity: 0 !important;
@@ -147,70 +76,26 @@ li {
     display: none !important;
 }
 
-/* .p-s {padding: var(--spc-s);}
-.p-t-s {padding-top: var(--spc-s);}
-.p-b-s {padding-bottom: var(--spc-s);}
-.p-r-s {padding-right: var(--spc-s);}
-.p-l-s {padding-left: var(--spc-s);}
-
-.p-m {padding: var(--spc-m);}
-.p-t-m {padding-top: var(--spc-m);}
-.p-b-m {padding-bottom: var(--spc-m);}
-.p-r-m {padding-right: var(--spc-m);}
-.p-l-m {padding-left: var(--spc-m);}
-
-.p-l {padding: var(--spc-l);}
-.p-t-l {padding-top: var(--spc-l);}
-.p-b-l {padding-bottom: var(--spc-l);}
-.p-r-l {padding-right: var(--spc-l);}
-.p-l-l {padding-left: var(--spc-l);}
-
-.m-s {margin: var(--spc-s);}
-.m-t-s {margin-top: var(--spc-s);}
-.m-b-s {margin-bottom: var(--spc-s);}
-.m-r-s {margin-right: var(--spc-s);}
-.m-l-s {margin-left: var(--spc-s);}
-
-.m-m {margin: var(--spc-m);}
-.m-t-m {margin-top: var(--spc-m);}
-.m-b-m {margin-bottom: var(--spc-m);}
-.m-r-m {margin-right: var(--spc-m);}
-.m-l-m {margin-left: var(--spc-m);}
-
-.m-l {margin: var(--spc-l);}
-.m-t-l {margin-top: var(--spc-l);}
-.m-b-l {margin-bottom: var(--spc-l);}
-.m-r-l {margin-right: var(--spc-l);}
-.m-l-l {margin-left: var(--spc-l);}
-
-.m-auto {margin: auto;}
-.m-l-auto {margin-left: auto;}
-.m-r-auto {margin-right: auto;}
-.m-t-auto {margin-top: auto;}
-.m-b-auto {margin-bottom: auto;}
- */
 
 /* --------------------  HEADER ------------------ */   
-
+header {
+    background-color: var(--text-dark);
+}
 nav {
     display: flex;
     flex-direction: column;
-    /* background-color: var(--light-teal); */
-    /* background-color: var(--dark-1); */
 }
 
 .nav__principal {
     height: var(--margin-top);
     display: flex;
     flex-direction: row;
-    background-color: var(--text-dark);
 }
-.nav__principal--logo-a {
-    padding-top: 10px;
 
-}
 #logo {
     height: 100%;
+    margin-left: 10px;
+    width: 60px; /* ajouté à cause d'une erreur "mozilla" */
 }
 .nav__principal--page-links {
     display: none;
@@ -222,7 +107,6 @@ nav {
 .nav__principal--social-links {
     display: none;
     padding-right: 20px;
-    /* display: flex; */
     transition: 0.3s;
     align-items: center;
     font-size: 2.2rem;
@@ -247,8 +131,15 @@ nav {
 .nav__principal--page-links + .nav__principal--social-links {
     margin-left: 100px;
 }
+.page-actif-principal {
+    background-color: var(--text-light) !important;
+    padding: 10px 20px;
+    color: var(--cyan-process) !important;
+}
 
-/* ------------- BURGER ------------------- */
+
+/* ---------------- BURGER ------------------- */
+
 .nav__principal--burger {
     margin-left: auto;
     border: none;
@@ -267,6 +158,8 @@ nav {
     background-color: var(--cyan-process);
     box-shadow: 2px 2px 6px lightgray;
 }
+
+/* quand le burger est fermé */
 .burger-close > div:nth-child(1) {
     transition: .5s;
     margin-bottom: 6px;
@@ -281,6 +174,7 @@ nav {
     margin-top: 6px;
 }
 
+/* quand le burger est ouvert */
 .burger-open > div:nth-child(1) {
     margin-bottom: -6px;
     transform: rotate(45deg);
@@ -301,21 +195,21 @@ nav {
     background-color: var(--carmine);
 }
 
-/* TOGGLE MENU */
-/* .toggle__menu {
-    position: fixed;
-    width: 100%;
-} */
+/* -------- Menu de la barre de navigation mobile - Toggle --------- */
 
+/* lorsque le menu de la barre de navigation mobile est ouvert */
 .toggle__menu[open]{
     display: flex;
     flex-direction: column;
-    background: var(--text-dark-2);
+    background: var(--text-dark);
 }
+
+/* lorsque le menu de la barre de navigation mobile est fermé */
 .toggle__menu:not([open]) {
     height: 0;
     display: none;
 }
+
 .toggle__menu-nav {
     padding: 10px 0;
     display: flex;
@@ -324,11 +218,14 @@ nav {
     justify-content: center;
     font-size: 1.2rem;
 }
+
+/* mettre en surbrillance la page active */
 .page-actif {
-    background-color: var(--text-dark) !important;
+    background-color: var(--text-dark-2) !important;
     width: 100%;
     text-align: center;
 }
+
 .toggle__menu-nav--li {
     padding: 10px;
     transition: .5s;
@@ -371,7 +268,6 @@ footer {
 }
 .footer__ul li {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -390,7 +286,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: end;
+    justify-content: center;
     text-align: start !important;
 } 
 .footer__logo-container__text-box > h5 {
@@ -400,6 +296,7 @@ footer {
 .footer-contact-ul > li {
     justify-content: space-between !important;
 }
+
 .footer-contact-ul > li:nth-of-type(1) {
     justify-content: center !important;
 }
@@ -408,6 +305,7 @@ footer {
     color: var(--text-light);
     transition: 0.3s;
 }
+/* le premier élément "li" de chaque ul" servira de titre */
 .footer__ul li:nth-of-type(1){
     font-size: 1.6rem;
     border-bottom: 1px solid var(--text-light);
@@ -432,7 +330,19 @@ footer {
 }
 
 /* --------------- RESPONSIVE ----------------- */
+
 @media only screen and (min-width: 768px){
+    /* changer la hauteur de la barre de navigation */
+    :root {
+        --margin-top: 80px;
+    }
+
+    header {
+        padding: 0 40px;
+    }
+    #logo {
+        width: 80px;
+    }
     .toggle__menu-nav {
         flex-direction: column;
         justify-content: flex-end;
@@ -440,6 +350,9 @@ footer {
     }
     .page-actif {
         text-align: end;
+        background: rgb(32,30,30);
+        background: linear-gradient(153deg, rgba(32,30,30,1) 65%, rgba(71,71,71,1) 100%);
+        
     }
     .toggle__menu-nav--li {
         padding: 10px 20px;
@@ -459,10 +372,8 @@ footer {
     .toggle__menu-social i:hover {
         color: var(--cyan-process);
     }
-    :root {
-        --margin-top: 80px;
-    }
     footer {
+        padding: 40px;
         grid-template-columns: 1fr 1fr;
     }
     .footer--logo-container img {
@@ -472,6 +383,11 @@ footer {
     }
     .footer__ul {
         align-items: flex-start;
+    }
+    .footer__ul > li:nth-of-type(1) {
+        width: 100%;
+        display: flex;
+        justify-content: start;
     }
     .footer--logo-container {
         display: grid;
@@ -485,30 +401,54 @@ footer {
         flex-direction: column;
         justify-content: end;
     }
+    .footer-contact-ul > li:nth-of-type(1) {
+        width: 100%;
+        display: flex;
+        justify-content: start !important;
+    }
     .footer-contact-ul > li:not(:nth-of-type(1)) {
         justify-content: space-between;
         width: 100%;
     }
+    .footer-social {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-social > li:nth-of-type(1) {
+        display: inline;
+        width: 100%;
+        text-align: start;
+    }
+    .footer-social > li:not(:nth-of-type(1)) {
+        font-size: 2.4rem;
+        margin: -10px 20px 0 0;     
+    }
 }
+
 @media only screen and (min-width: 1200px){
+    /* changer la hauteur de la barre de navigation */
+    header {
+        padding: 0 60px;
+    }
+
+    /* masquer le bouton burger et menu de navigation 
+    pour le mobile*/
     #burger {
         display:none;
     }
+    .toggle__menu {
+        display:none !important;
+    }
+
     .nav__principal--page-links {
         display: flex;
     }
     .nav__principal--social-links {
         display: flex;
     }
-    .page-actif {
-        background-color: var(--text-light) !important;
-        padding: 10px 20px;
-        color: var(--cyan-process) !important;
-    }
-    .page-actif:hover {
-        color: var(--cyan-process) !important;
-    }
+
     footer {
+        padding: 60px;
         grid-template-columns: repeat(4, 1fr);
         gap: 5px 50px;
 
@@ -533,9 +473,7 @@ footer {
     }
     .footer-social > li:not(:nth-of-type(1)) {
         font-size: 2.4rem;
-        margin: -10px 20px 0 0;     
+        margin: -70px 20px 0 0;     
     }
-    .toggle__menu {
-        display:none !important;
-    }
+
 }
