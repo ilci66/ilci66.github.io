@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tent Merchant</title>
+    <meta name="description" content="Bienvenue chez Tent Merchant. Nous sommes une entreprise de tentes respectueuse de l'environnement.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="./css/reset.css">
     <script defer src="./js/navbar.js"></script>
     <script defer src="./js/index.js"></script>
+    <title>Tent Merchant</title>
 </head>
 <body>  
+    <!------------------- NAVBAR --------------------- -->
     <header>
         <nav>
             <div id="nav-principal" class="nav__principal">
                 <a href="/" class="nav__principal--logo-a">
-                    <img id="logo" src="./img/logo.png" alt="Logo d'entreprise">
+                    <img id="logo" src="./img/logo.webp" alt="Logo d'entreprise">
                 </a>
                 <ul class="nav__principal--page-links">
                     <li><a class="page-actif-principal" href="/">Accueil</a></li>
@@ -39,6 +41,7 @@
                     <div class="nav__principal--burger-bar"></div>
                 </button>
             </div>
+            <!-- ------------------ TOGGLE MENU POUR MOBILE --------------- -->
             <div id="toggle-menu" class="toggle__menu">
                 <ul class="toggle__menu-nav">
                     <li class="toggle__menu-nav--li page-actif">
@@ -54,7 +57,7 @@
                         <a href="pgs/contact.html" class=" text-light">Contact</a>
                     </li>
                 </ul>
-                <ul id="toggle-menu" class="toggle__menu-social">
+                <ul class="toggle__menu-social">
                     <li>
                         <a href="" class="">
                             <i class="fa-brands fa-facebook toggle__menu-social-link"></i>
@@ -75,44 +78,53 @@
         </nav>
     </header>
     <main>
+        <!-- ------------------------- HERO --- -------------- -->
         <section class="hero">
-            <img class="hero__img" src="./img/in-tent-forest.jpg" alt="Une photo d'une forêt prise à l'intérieur d'une tente">
+            <img class="hero__img" src="./img/in-tent-forest.webp" alt="Une photo d'une forêt prise à l'intérieur d'une tente">
             <h1 class="hero__title">
                 Confort de votre maison <br>Où vous voulez
                 <i class="fa-solid fa-mountain-sun"></i>
             </h1>
             <p class="hero__text">Rendez votre prochain voyage de camping beaucoup plus agréable que les précédents .</p>
         </section>
+
+        <!----------------------- LES BLOCS INFORMATION ---------------->
         <section class="section__grid">
             <article class="information__bloc">
-                <img src="./img/view-1.jpg" alt="Une photo d'un lac">
+                <img src="./img/view-1.webp" alt="Une photo d'un lac">
                 <h3 class="information__bloc--title">Nous Préservons la Nature.</h3>
                 <p class="information__bloc--text">Tent Merchant a été créé par des amoureux de la nature, pour des amoureux de la nature. Nous connaissons et comprenons l'importance de préserver et de protéger notre environnement. C'est pourquoi <strong>plus de 99% </strong>des matériaux que nous utilisons pour nos tentes sont recyclables.</p>
             </article>
             <article class="information__bloc">
-                <img src="./img/office-team.jpg" alt="une photo des membres de notre équipe">
+                <img src="./img/office-team.webp" alt="une photo des membres de notre équipe">
                 <h3 class="information__bloc--title">Cinq Années Consécutives de Récompenses de Qualité</h3>
                 <p class="information__bloc--text">Nous sommes très fiers d'annoncer qu'en mai 2022, nous avons reçu votre <strong>cinquième prix de qualité</strong>. En tant qu'équipe, nous vous remercions sincèrement pour tout votre soutien.</p>
             </article>
             <article class="information__bloc">
-                <img src="./img/forest-tent-chairs.jpg" alt="">
+                <img src="./img/forest-tent-chairs.webp" alt="">
                 <h3 class="information__bloc--title">Système de Ventilation Révolutionnaire</h3>
                 <p class="information__bloc--text">Le système de ventilation d'air que nous avons créé pour nos tentes est devenu un standard de l'industrie. Grâce à ce système de ventilation, les étés chauds sont beaucoup plus confortables. Vous pouvez profiter de l'air frais à l'intérieur de votre tente tout en étant protégé des éléments de la nature, tels que les insectes et les intempéries.</p>
             </article>
             <article class="information__bloc">
-                <img src="./img/people-dog-tent-floor.jpg" alt="">
+                <img src="./img/people-dog-tent-floor.webp" alt="">
                 <h3 class="information__bloc--title">Sol Ergonomique et Orthopédique Intégré Dans Tous les Modèles.</h3>
                 <p class="information__bloc--text">Vous avez demandé et nous l'avons fait! Tous nos modèles 2023 auront nos tapis de sol signature <strong>sans frais supplémentaires.</strong> Profitez de votre prochain voyage de camping sans vous soucier des bosses et des branches sur le sol forestier.</p>
             </article>
         </section>
+
+        <!----------------- LES SECTIONS ONGLETS ---------------->
         <section class="onglets">
+
+            <!-- Les button "tabs" -->
             <ul class="onglets__btns">
                 <li class="onglet-btn-actif onglet-btn" id="onglet-btn-1"></li>
                 <li class="onglet-btn" id="onglet-btn-2"></li>
                 <li class="onglet-btn" id="onglet-btn-3"></li>
             </ul>
+            
+            <!-- Les "onglets" -->
             <div id="onglet-1" class="onglets__item onglet-actif">
-                <img target="_blank" src="./img/clean-up.jpg" alt="membres de l'équipe tenant une affiche">
+                <img src="./img/clean-up.webp" alt="membres de l'équipe tenant une affiche">
                 <div class="onglet__item--text-box">
                     <h3 class="">Merci de Nous Rencontrer Pour Notre Événement de Nettoyage Annuel.</h3>
                     <hr>
@@ -121,7 +133,7 @@
                 </div>
             </div>
             <div id="onglet-2" class="onglets__item">
-                <img src="./img/hammock-book-forest.jpg" alt="hamac livre et forêt">
+                <img src="./img/hammock-book-forest.webp" alt="hamac livre et forêt">
                 <div class="onglet__item--text-box">
                     <h3 class="">Notre Bibliothèque Ne Cesse de s'Agrandir.</h3>
                     <hr>
@@ -131,29 +143,38 @@
             </div>
             
             <div id="onglet-3" class="onglets__item">
-                <img src="./img/focused-mic.jpg" alt="Une photo d'un micro, avec un arrière-plan flou">
+                <img src="./img/focused-mic.webp" alt="Une photo d'un micro, avec un arrière-plan flou">
                 <div class="onglet__item--text-box">
                     <h3  class="">Concours de Chant</h3>
                     <hr>
                     <p class="">Pour notre concours de chant saisonnier, il y a eu un nombre record de demandes. Nous avons le regret de vous informer que tous ceux qui ont postulé ne pourront pas chanter et concourir. 
                     </p>
                     <p>Le tirage au sort aura lieu le 11.11.2022. La récompense pour la place est de <b>1000 euros</b>, la deuxième de <b> 700 euros</b> et la troisième de <b>500 euros</b>. Amusez vous !</p>
+                </div>
             </div>
         </section>
+
+        <!-- ---------------------- LE SECTION VIDEO -------------------->
         <section class="section__video">
-            <div
-            class="video-responsive"
-            >
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/CmCIZ_aUAeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </iframe>
+            <div class="video-responsive">
+                <iframe 
+                    width="100%" 
+                    height="600" 
+                    src="https://www.youtube.com/embed/CmCIZ_aUAeQ" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen
+                >
+                </iframe>
             </div>
-            <article class="section__video__artice">
-                <h3 class="section__video__artice--titre">Qu'est-Ce Que Vous Attendez ?</h3>
-                <p class="section__video__artice--p"> Profitez de votre vie et réveillez-vous chaque jour dans un nouvel endroit. Oubliez le stress de votre vie quotidienne et détendez-vous dans la nature. </p>
+            <article class="section__video__article">
+                <h3 class="section__video__article--titre">Qu'est-Ce Que Vous Attendez ?</h3>
+                <p class="section__video__article--p"> Profitez de votre vie et réveillez-vous chaque jour dans un nouvel endroit. Oubliez le stress de votre vie quotidienne et détendez-vous dans la nature. Tout ce que vous avez à faire est votre sens de l'émerveillement et nous vous aurons pour le reste. Explorez nos produits et découvrez ce qui fait de nous les meilleurs en affaires et le choix des clients.</p>
                 <a href="./pgs/produits.html">Produits</a>
             </article>
         </section>
     </main>
+    <!----------------------- FOOTER ---------------------->
     <footer>   
         <ul class="footer__ul">
             <li>Navigation</li>
@@ -177,16 +198,17 @@
             <li>motorhome1@email.com <i class="fa-regular fa-envelope"></i></li>
             <li>motorhome2@email.com <i class="fa-regular fa-envelope"></i></li>
         </ul>    
-        <ul class="footer--logo-container">
-            <img src="./img/logo.png" alt="">
+        <div class="footer--logo-container">
+            <img src="./img/logo.webp" alt="">
             <div class="footer__logo-container__text-box">
                 <h5>Tent Merchant</h5>
                 <p>Sortez et commencez à vivre!</p>
             </div>
-        </ul>
+        </div>
         <div class="footer__bottom">
-            <p class="footer__legal">legal text</p>
-            <p class="footer_copyright">copyright</p>
+            <p class="footer__legal">Conformément aux lois « Informatique & Liberté » et « RGPD », vous pouvez exercer vos droits d’accès à vos données, de rectification, d’effacement, d’opposition, de limitation ou de portabilité nous contactant.
+                En cas de différend, vous avez le droit d’introduire une réclamation (plainte) auprès de la Cnil.</p>
+            <p class="footer_copyright">Copyright © Ilker Akbiyik 2022 Tout droits résérvés</p>
         </div>
     </footer>
 </body>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avez-vous quelque chose à nous dire. N'hésitez pas à nous contacter ou à nous rendre visite à notre siège social.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
@@ -16,11 +17,13 @@
     <title>Contact</title>
 </head>
 <body>
+    
+    <!------------------- NAVBAR --------------------- -->
     <header>
         <nav>
             <div id="nav-principal" class="nav__principal">
                 <a href="/" class="nav__principal--logo-a">
-                    <img id="logo" src="../img/logo.png" alt="Logo d'entreprise">
+                    <img id="logo" src="../img/logo.webp" alt="Logo d'entreprise">
                 </a>
                 <ul class="nav__principal--page-links">
                     <li><a href="../index.html">Accueil</a></li>
@@ -39,6 +42,8 @@
                     <div class="nav__principal--burger-bar"></div>
                 </button>
             </div>
+            
+            <!-- ------------------ TOGGLE MENU POUR MOBILE --------------- -->
             <div id="toggle-menu" class=" toggle__menu">
                 <ul class="toggle__menu-nav">
                     <li class="toggle__menu-nav--li">
@@ -54,7 +59,7 @@
                         <a href="contact.html" class=" text-light">Contact</a>
                     </li>
                 </ul>
-                <ul id="toggle-menu" class="toggle__menu-social">
+                <ul class="toggle__menu-social">
                     <li>
                         <a href="" class=" text-light">
                             <i class="fa-brands fa-facebook"></i>
@@ -75,6 +80,8 @@
         </nav>
     </header>
     <main>
+
+        <!------------------ CARTE DE QUARTIER -------------->
         <section class="carte__section">
             <iframe 
             width="100%" 
@@ -89,6 +96,8 @@
             </a>
             </iframe>
         </section>
+
+        <!----------------- FORMULAIRE DE CONTACT -------------->
         <section class="form__section">
         <h1 class="contact__title">Contactez-nous</h1>
         <form method="post">
@@ -183,9 +192,14 @@
             </form>
         </form>
         </section>
+
+        <!-- animation de soumission de formulaire réussie -->
         <i class="fa-solid fa-paper-plane success-plane"></i>
         </aside>
     </main>
+
+    
+    <!----------------------- FOOTER ---------------------->
     <footer>
         <ul class="footer__ul">
             <li>Navigation</li>
@@ -209,16 +223,17 @@
             <li>motorhome1@email.com <i class="fa-regular fa-envelope"></i></li>
             <li>motorhome2@email.com <i class="fa-regular fa-envelope"></i></li>
         </ul>    
-        <ul class="footer--logo-container">
-            <img src="../img/logo.png" alt="Logo d'entreprise">
+        <div class="footer--logo-container">
+            <img src="../img/logo.webp" alt="Logo d'entreprise">
             <div class="footer__logo-container__text-box">
                 <h5>Tent Merchant</h5>
                 <p>Sortez et commencez à vivre!</p>
             </div>
-        </ul>
+        </div>
         <div class="footer__bottom">
-            <p class="footer__legal">legal text</p>
-            <p class="footer_copyright">copyright</p>
+            <p class="footer__legal">Conformément aux lois « Informatique & Liberté » et « RGPD », vous pouvez exercer vos droits d’accès à vos données, de rectification, d’effacement, d’opposition, de limitation ou de portabilité nous contactant.
+                En cas de différend, vous avez le droit d’introduire une réclamation (plainte) auprès de la Cnil.</p>
+            <p class="footer_copyright">Copyright © Ilker Akbiyik 2022 Tout droits résérvés</p>
         </div>
     </footer>
 </body>

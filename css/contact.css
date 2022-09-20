@@ -1,4 +1,3 @@
-
 /* ------------------ CONTACT --------------- */
 .carte__section {
     margin: 20px;
@@ -9,6 +8,9 @@
     border-bottom: 1px solid var(--text-dark);
     color: var(--text-dark);
 }
+
+
+/* ------------------ FORMULAIRE --------------- */
 form {
     display: grid;
     grid-template-columns: 1fr;
@@ -69,7 +71,7 @@ input[type="submit"]:hover:disabled {
     cursor: not-allowed;
 }
 
-
+/* vérification de la validité et de l'invalidité */
 textarea:valid {
     border: 1px solid green ;
     box-shadow: 0 0 12px green ;

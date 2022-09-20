@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorez tous nos produits primés qui ont fait de nous le leader du marché au cours des 5 dernières années consécutives.">
     <title>Produits</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
@@ -16,11 +17,12 @@
     <script defer type="module" src="../js/produits.js"></script>
 </head>
 <body>
+    <!------------------- NAVBAR --------------------- -->
     <header>
         <nav>
             <div id="nav-principal" class="nav__principal">
                 <a href="/" class="nav__principal--logo-a">
-                    <img id="logo" src="../img/logo.png" alt="Logo d'entreprise">
+                    <img id="logo" src="../img/logo.webp" alt="Logo d'entreprise">
                 </a>
                 <ul class="nav__principal--page-links">
                     <li><a href="../index.html">Accueil</a></li>
@@ -39,6 +41,7 @@
                     <div class="nav__principal--burger-bar"></div>
                 </button>
             </div>
+            <!-- ------------------ TOGGLE MENU POUR MOBILE --------------- -->
             <div id="toggle-menu" class=" toggle__menu">
                 <ul class="toggle__menu-nav">
                     <li class="toggle__menu-nav--li">
@@ -54,7 +57,7 @@
                         <a href="contact.html" class=" text-light">Contact</a>
                     </li>
                 </ul>
-                <ul id="toggle-menu" class="toggle__menu-social">
+                <ul class="toggle__menu-social">
                     <li>
                         <a href="" class=" text-light">
                             <i class="fa-brands fa-facebook"></i>
@@ -75,6 +78,7 @@
         </nav>
     </header>
     <main>
+        <!--------------- LES BOUTONS FILTRES ------------------>
         <section class="filter-container">
             <ul>
                 <li id="tous" class="actif-filter filter__btn">Tous</li>
@@ -84,11 +88,15 @@
                 <li class="filter__btn" id="8-per">8 Personnes</li>
             </ul>
         </section>
+
+        <!-------------- LES CARDS DES PRODUITS -------------------->
         <section class="">
             <ul class="cards-container">
 
             </ul>
         </section>
+
+        <!-------------- DETAILLE MODAL -------------------->
         <section class="modal">
             <div class="modal__info-box">
                 <button class="modal__info-box--close-btn">
@@ -102,6 +110,8 @@
             </div>
         </section>
     </main>
+    
+    <!----------------------- FOOTER ---------------------->
     <footer>
         <ul class="footer__ul">
             <li>Navigation</li>
@@ -129,16 +139,17 @@
             title
         </h4> -->  
         
-        <ul class="footer--logo-container">
-            <img src="../img/logo.png" alt="logo d'entreprise">
+        <div class="footer--logo-container">
+            <img src="../img/logo.webp" alt="logo d'entreprise">
             <div class="footer__logo-container__text-box">
                 <h5>Tent Merchant</h5>
                 <p>Sortez et commencez à vivre!</p>
             </div>
-        </ul>
+        </div>
         <div class="footer__bottom">
-            <p class="footer__legal">legal text</p>
-            <p class="footer_copyright">copyright</p>
+            <p class="footer__legal">Conformément aux lois « Informatique & Liberté » et « RGPD », vous pouvez exercer vos droits d’accès à vos données, de rectification, d’effacement, d’opposition, de limitation ou de portabilité nous contactant.
+                En cas de différend, vous avez le droit d’introduire une réclamation (plainte) auprès de la Cnil.</p>
+            <p class="footer_copyright">Copyright © Ilker Akbiyik 2022 Tout droits résérvés</p>
         </div>
     </footer>
 </body>
