@@ -7,17 +7,13 @@
     --text-light: #FFFAFB;
     --text-dark: #201e1e;
     --text-dark-2: #474747;
-    --middle-blue-green: #7DE2d1;
-    --persian-green: #339989;
+    --dark-2: #1e1e1e00;
+
     --cyan-process: #01BAEF;
     --carmine: #8C001A;
-    --blood-red: #660000;
-    --light-teal: rgb(234, 254, 254);
-    --dark-2: rgba(30, 30, 30, 0);
 
     --margin-top: 60px;
     --margin-cote: 20px;
-
 
     --spc-s: 10px;
     --spc-m: 20px;
@@ -25,8 +21,8 @@
 
 }
 
-/* ----------------- LES BASES ------------- */
 
+/* ----------------- LES BASES ------------- */
 *, *::before, * ::after {
     padding: 0;
     margin: 0;
@@ -67,8 +63,8 @@ li {
 }
 
 
-/*-------------- Les "clas" communes des bases ----------- */
 
+/*-------------- Les "clas" communes des bases ----------- */
 .text-light {color: var(--text-light);}
 .text-dark {color: var(--text-dark);}
 

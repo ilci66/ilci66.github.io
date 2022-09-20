@@ -1,4 +1,4 @@
-/* filter*/
+/* filtre*/
 .filter-container > ul{
     display: flex;
     flex-direction: row;
@@ -22,6 +22,7 @@
     grid-template-columns: 1fr;
     grid-gap: 10px;
 }
+
 /* changer les couleurs du lien actif */
 .actif-filter {
     padding: 14px;
@@ -55,6 +56,7 @@
 
 
 /* -------------- MODAL ------------- */
+
 /* l'état des modaux sera conservé sur l'attribut open */
 .modal:not([open]) {
     position: fixed;
@@ -131,8 +133,8 @@
 
 }
 
-/* --------------- RESPONSIVE --------------- */
 
+/* --------------- RESPONSIVE --------------- */
 @media only screen and (min-width: 768px){
     .filter-container > ul > li {
         margin-left: 8px;

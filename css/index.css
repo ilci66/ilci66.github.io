@@ -31,6 +31,32 @@
 }
 
 
+/* ---------------- INFORMATION ----------- */
+.information__bloc {
+    border-radius: 5px;
+    padding: 20px 20px 40px;
+    transition: 0.5s;
+}
+.information__bloc:hover {
+    box-shadow: 0 0 12px var(--carmine);
+}
+.information__bloc > img {
+    transition: 0.5;
+}
+.information__bloc:hover> img {
+    box-shadow: 0 0 12px var(--cyan-process);
+}
+.information__bloc--title {
+    margin-top: 16px;
+    padding: 0 10px;
+}
+
+.information__bloc--text {
+    margin-top: 16px;
+    padding: 0 10px;
+}
+
+
 /* ---------------- SECTION VIDEO ----------- */
 .section__video {
     display: grid;
@@ -75,33 +101,8 @@
     padding-top: 60px;
 }
 
-/* ---------------- INFORMATION ----------- */
-.information__bloc {
-    border-radius: 25px;
-    padding: 20px 20px 40px;
-    transition: 0.5s;
-}
-.information__bloc:hover {
-    box-shadow: 0 0 12px var(--carmine);
-}
-.information__bloc > img {
-    transition: 0.5;
-}
-.information__bloc:hover> img {
-    box-shadow: 0 0 12px var(--cyan-process);
-}
-.information__bloc--title {
-    margin-top: 16px;
-    padding: 0 10px;
-}
-
-.information__bloc--text {
-    margin-top: 16px;
-    padding: 0 10px;
-}
 
 /* ----------------- ONGLETS --------------- */
-
 .onglets {
     display: flex;
     flex-direction: row;
@@ -161,7 +162,8 @@
 
 @media only screen and (min-width: 768px){
     .hero__img {
-        height: calc(100vh - var(--margin-top));
+        /* height: calc(100vh - var(--margin-top)); */
+        height: 60vh;
     }
     .section__grid {
         display: grid;
@@ -234,5 +236,9 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-gap: 15px;
+    }
+    .hero__text {
+        bottom: 100px;
+        width: 90%;
     }
 }

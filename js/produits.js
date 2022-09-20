@@ -31,11 +31,12 @@ filterBtns.forEach(b => {
                 return d.personne === x
             })
         }
+        // Exécuter la fonction pour rendre les produits filtrés
         renderProducts(filteredData)
     })
 }) 
 
-
+// fonction pour rendre le modal visible
 const openModal = (e) => {
     // Pour une simple animation de croissance
     modalInfoBox.style.transform = "scale(1)";

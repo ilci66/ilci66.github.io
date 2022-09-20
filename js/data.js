@@ -5,7 +5,7 @@ export const data = [
         "personne": "2",
         "img": "../img/2-personnes-forklaz.webp",
         "name": "Forklaz Blanc", 
-        "price": "42.99 €", 
+        "price": "42.99", 
         "info": ["imperméable", "Conception de ventilation d'air 2022", "tapis de sol intégrés", "plusieurs pièces"]
     },
     {

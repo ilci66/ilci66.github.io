@@ -21,6 +21,7 @@ inputs.forEach(input => {
     })
 })
 
+
 // Soumission et vérifications personnalisées
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -44,6 +45,7 @@ form.addEventListener('submit', (e) => {
         },800)
     }
 })
+
 
 // Pour verifier les inputs
 function checkInputs(inputs) {

@@ -32,9 +32,9 @@
                     <li><a class="page-actif-principal" href="./contact.html">Contact</a></li>
                 </ul>
                 <ul class="nav__principal--social-links">
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
                 <button id="burger" class="nav__principal--burger burger-close">
                     <div class="nav__principal--burger-bar"></div>
@@ -60,21 +60,9 @@
                     </li>
                 </ul>
                 <ul class="toggle__menu-social">
-                    <li>
-                        <a href="" class=" text-light">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class=" text-light">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class=" text-light">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </li>
+                    <li><a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook text-light"></i></a></li>
+                    <li><a target="_blank" href="https://www.youtube.com"><i class="fa-brands fa-youtube text-light"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram text-light"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -99,102 +87,102 @@
 
         <!----------------- FORMULAIRE DE CONTACT -------------->
         <section class="form__section">
-        <h1 class="contact__title">Contactez-nous</h1>
-        <form method="post">
-            <label for="f_prenom">
-                Prénom <span class="requis-input">*</span> 
+            <h1 class="contact__title">Contactez-nous</h1>
+            <form method="post">
+                <label for="f_prenom">
+                    Prénom <span class="requis-input">*</span> 
+                    <input 
+                        id="f_prenom"
+                        minlength="2"
+                        maxlength="32" 
+                        name="f_prenom" 
+                        pattern="^([^0-9]*)$"
+                        placeholder="John"
+                        type="text"
+                        title="Veuillez entrez 2-32 caractères, pas de chiffres, champ obligatoire ."
+                        required
+                    >
+                    <small>Veuillez entrez 2-32 caractères, pas de chiffres .</small>
+                </label>
+                <label for="f_nom">
+                    Nom <span class="requis-input">*</span>
+                    <input 
+                        id="f_nom"
+                        minlength="2"
+                        maxlength="32" 
+                        name="f_nom" 
+                        pattern="^([^0-9]*)$"
+                        placeholder="Doe"
+                        type="text"
+                        required
+                        title="Veuillez entrez 2-32 caractères, pas de chiffres, champ obligatoire ."
+                    >
+                    <small>Veuillez entrez 2-32 caractères, pas de chiffres .</small>
+                </label>
+                <label for="f_sujet">
+                    Sujet <span class="requis-input">*</span>
+                    <input 
+                        id="f_sujet"
+                        type="text"
+                        required
+                        minlength="6"
+                        maxlength="50" 
+                        name="f_sujet"
+                        placeholder="Une Suggestion"
+                        title="Veuillez entrez 6-50 caractères"
+                    >
+                    <small class="form-rule">6-50 caractères</small>
+                </label>
+                <label for="f_phone">
+                    Phone Number 
+                    <input 
+                        id="f_phone"
+                        name="f_phone"
+                        pattern="^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$"
+                        type="tel"
+                        placeholder="07 77 77 777"
+                    >
+                    <small>Un numéro de téléphone français valide, pas obligatoire .</small>
+                </label>
+                <label for="f_email">
+                    Email <span class="requis-input">*</span>
+                    <input 
+                        id="f_email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                        required 
+                        type="email"
+                        name="f_email"
+                        placeholder="exemple@email.com"
+                    >
+                    <small>Un adresse e-mail valid .</small>
+                </label>
+                <label for="f_message">
+                    Votre Message <span class="requis-input">*</span>
+                    <textarea 
+                        id="f_message"
+                        rows="6" 
+                        cols="1"
+                        minlength="10"
+                        maxlength="600"
+                        name="f_message"
+                        type="text"
+                        placeholder="Je voudrais vous parler de ..."
+                        required                    
+                        title="Veuillez entrez 6-600 caractères, champ obligatoire ."
+                    ></textarea>
+                </label>
                 <input 
-                    id="f_prenom"
-                    minlength="2"
-                    maxlength="32" 
-                    name="f_prenom" 
-                    pattern="^([^0-9]*)$"
-                    placeholder="John"
-                    type="text"
-                    title="Veuillez entrez 2-32 caractères, pas de chiffres, champ obligatoire ."
-                    required
-                >
-                <small>Veuillez entrez 2-32 caractères, pas de chiffres .</small>
-            </label>
-            <label for="f_nom">
-                Nom <span class="requis-input">*</span>
-                <input 
-                    id="f_nom"
-                    minlength="2"
-                    maxlength="32" 
-                    name="f_nom" 
-                    pattern="^([^0-9]*)$"
-                    placeholder="Doe"
-                    type="text"
-                    required
-                    title="Veuillez entrez 2-32 caractères, pas de chiffres, champ obligatoire ."
-                >
-                <small>Veuillez entrez 2-32 caractères, pas de chiffres .</small>
-            </label>
-            <label for="f_sujet">
-                Sujet <span class="requis-input">*</span>
-                <input 
-                    id="f_sujet"
-                    type="text"
-                    required
-                    minlength="6"
-                    maxlength="50" 
-                    name="f_sujet"
-                    placeholder="Une Suggestion"
-                    title="Veuillez entrez 6-50 caractères"
-                >
-                <small class="form-rule">6-50 caractères</small>
-            </label>
-            <label for="f_phone">
-                Phone Number 
-                <input 
-                    id="f_phone"
-                    name="f_phone"
-                    pattern="^(?:(?:\+|00)33[\s.-]{0,3}(?:\(0\)[\s.-]{0,3})?|0)[1-9](?:(?:[\s.-]?\d{2}){4}|\d{2}(?:[\s.-]?\d{3}){2})$"
-                    type="tel"
-                    placeholder="07 77 77 777"
-                >
-                <small>Un numéro de téléphone français valide, pas obligatoire .</small>
-            </label>
-            <label for="f_email">
-                Email <span class="requis-input">*</span>
-                <input 
-                    id="f_email"
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
-                    required 
-                    type="email"
-                    name="f_email"
-                    placeholder="exemple@email.com"
-                >
-                <small>Un adresse e-mail valid .</small>
-            </label>
-            <label for="f_message">
-                Votre Message <span class="requis-input">*</span>
-                <textarea 
-                    id="f_message"
-                    rows="6" 
-                    cols="1"
-                    minlength="10"
-                    maxlength="600"
-                    name="f_message"
-                    type="text"
-                    placeholder="Je voudrais vous parler de ..."
-                    required                    
-                    title="Veuillez entrez 6-600 caractères, champ obligatoire ."
-                ></textarea>
-            </label>
-            <input 
-                type="submit" 
-                value="Submit"
-                id="submit-btn"
-                disabled
+                    type="submit" 
+                    value="Submit"
+                    id="submit-btn"
+                    disabled
                 >
             </form>
-        </form>
         </section>
 
         <!-- animation de soumission de formulaire réussie -->
-        <i class="fa-solid fa-paper-plane success-plane"></i>
+        <aside>
+            <i class="fa-solid fa-paper-plane success-plane"></i>
         </aside>
     </main>
 
@@ -210,9 +198,9 @@
         </ul> 
         <ul class="footer__ul footer-social">
             <li>Réseaux Sociaux</li>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
         </ul>  
         <ul class="footer__ul footer-contact-ul">
             <li>Contact</li>
@@ -220,9 +208,9 @@
                 77 77 77 777 (et) 77 77 77 776
                 <i class="fa-solid fa-phone-flip"></i>
             </li>
-            <li>motorhome1@email.com <i class="fa-regular fa-envelope"></i></li>
-            <li>motorhome2@email.com <i class="fa-regular fa-envelope"></i></li>
-        </ul>    
+            <li>tentmerchant1@email.com <i class="fa-regular fa-envelope"></i></li>
+            <li>tentmerchant2@email.com <i class="fa-regular fa-envelope"></i></li>
+        </ul>      
         <div class="footer--logo-container">
             <img src="../img/logo.webp" alt="Logo d'entreprise">
             <div class="footer__logo-container__text-box">
